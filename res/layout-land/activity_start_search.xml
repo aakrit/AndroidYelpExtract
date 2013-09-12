@@ -1,0 +1,114 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="100"
+            >
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/welcome"
+                android:id="@+id/textView"
+                android:layout_margin="12dp"
+                android:textSize="25sp"
+                android:layout_weight="10"
+                android:textColor="#ffff0000"/>
+
+        <TextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/searchRestaurant"
+                />
+
+        <EditText
+                style="@style/TextStyle"
+                android:layout_width="fill_parent"
+                android:id="@+id/editSearchRestaurant"
+                android:layout_marginRight="20dp"
+                android:textColor="#FFF"
+                android:background="#ffc0c0c0"
+                android:textColorHint="#ffff0000"
+                android:hint="@string/enteredRestaurant"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                />
+
+        <TextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/yourLocation"
+                android:layout_marginTop="20dp"
+                />
+
+        <EditText
+                style="@style/TextStyle"
+                android:layout_width="fill_parent"
+                android:id="@+id/editSearchLocation"
+                android:layout_marginRight="20dp"
+                android:textColor="#FFF"
+                android:background="#ffc0c0c0"
+                android:textColorHint="#ffff0000"
+                android:hint="@string/enteredLocation"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:layout_marginBottom="4dp"
+                />
+
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <RadioGroup
+                    android:id="@+id/radioSearchOptions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="20dp">
+            </RadioGroup>
+
+
+            <Button
+                    style="@style/ButtonStyleLand"
+                    android:text="@string/search_text"
+                    android:id="@+id/searchButton"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textColor="#ffffffff"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingRight="64dp"
+                    android:paddingLeft="64dp"
+                    />
+
+
+            <Button
+                    android:text="Maps and Navigation"
+                    style="@style/ButtonStyleLand"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+
+                    android:id="@+id/mappingButton"
+
+                    android:textColor="#ffffffff"
+                    android:background="#ff0000ff"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

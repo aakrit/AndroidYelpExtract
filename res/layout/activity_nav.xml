@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent"
+
+              tools:context=".NavActivity">
+
+    <Button
+            android:id="@+id/map_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map using coordinates"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Navigate using coordinates"
+            android:id="@+id/nav_button"
+            android:layout_gravity="left|center_vertical"/>
+
+    <Button
+            android:id="@+id/map_button_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map using address"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Navigate using address"
+            android:id="@+id/nav_button_address"
+            android:layout_gravity="left|center_vertical"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Latitude"
+                android:gravity="center"
+                android:id="@+id/textView"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal|numberSigned"
+                android:ems="10"
+                android:id="@+id/editLat"
+                />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Longitude"
+                android:gravity="center"
+                android:id="@+id/textView2"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal|numberSigned"
+                android:ems="10"
+                android:id="@+id/editLong"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Address:"
+                android:gravity="center"
+                />
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+                android:id="@+id/addressEditText"
+                />
+
+    </LinearLayout>
+
+</LinearLayout>

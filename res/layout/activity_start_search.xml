@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="100"
+        >
+
+    <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:id="@+id/textView"
+            android:layout_margin="20dp"
+            android:paddingTop="15dp"
+            android:textSize="25sp"
+            android:layout_weight="10"
+            android:textColor="#ffff0000"/>
+
+    <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:text="@string/searchRestaurant"
+
+            />
+
+    <EditText
+            style="@style/TextStyle"
+            android:layout_width="fill_parent"
+            android:id="@+id/editSearchRestaurant"
+            android:layout_marginRight="20dp"
+            android:textColor="#FFF"
+            android:background="#ffc0c0c0"
+            android:textColorHint="#ffff0000"
+            android:hint="@string/enteredRestaurant"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            />
+
+    <TextView
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/yourLocation"
+            android:layout_marginTop="20dp"
+            />
+
+    <EditText
+            style="@style/TextStyle"
+            android:layout_width="fill_parent"
+            android:id="@+id/editSearchLocation"
+            android:layout_marginRight="20dp"
+            android:textColor="#FFF"
+            android:background="#ffc0c0c0"
+            android:textColorHint="#ffff0000"
+            android:hint="@string/enteredLocation"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:layout_marginBottom="20dp"
+            />
+
+
+    <RadioGroup
+            android:id="@+id/radioSearchOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp">
+    </RadioGroup>
+
+    <Button
+            android:text="@string/search_text"
+            android:id="@+id/searchButton"
+            android:layout_weight="4"
+            android:textColor="#ffffffff"
+            android:background="#ffff0000"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+
+    <Button
+            android:text="Maps and Navigation"
+            android:layout_marginTop="4dp"
+            android:id="@+id/mappingButton"
+            android:layout_weight="4"
+            android:textColor="#ffffffff"
+            android:background="#ff0000ff"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Team Yelp!</string>
+    <string name="menu_exit">Exit</string>
+    <string name="menu_search">Search</string>
+    <string name="pleaseSelectASearchOption">Please select a search option.</string>
+    <string name="welcome">Welcome to Yelp Search</string>
+    <string name="search_text">Search</string>
+    <string name="enteredLocation">i.e. Chicago, Austin, etc.</string>
+    <string name="yourLocation">Enter your location:</string>
+    <string name="enteredRestaurant">i.e. Girl and the Goat</string>
+    <string name="searchRestaurant">Enter the name of the restaurant:</string>
+
+    <string name="name_loading_text">Restaurant name loading…</string>
+    <string name="address_loading_text">Restaurant Address loading…</string>
+    <string name="phone_loading_text">Restaurant Phone Number loading…</string>
+
+    <string name="yelp_restaurant_label">Restaurant Name:</string>
+    <string name="yelp_address_label">Address:</string>
+    <string name="yelp_phone_label">Phone:</string>
+    <string name="back">Back</string>
+    <bool name="debug">true</bool>
+
+
+
+</resources>
